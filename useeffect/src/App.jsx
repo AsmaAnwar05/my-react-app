@@ -12,12 +12,9 @@ function App() {
   
   useEffect(() => {
     alert("Count was changed")
-   
+     setColor(color + 1)
   }, [count])
-  useEffect(() => {
-    alert("color was changed")
-   
-  }, [color])
+
   
   return (
     <>
@@ -35,9 +32,8 @@ function App() {
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
         </button>
-        <button onClick={() => setColor((color) => color + 1)}>
-          color is {color}
-        </button>
+        
+        
         <p>
           Edit <code>src/App.jsx</code> and save to test HMR
         </p>
